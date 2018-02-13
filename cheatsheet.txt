@@ -1,0 +1,34 @@
+//1.Probability 
+
+// 1.1 The probability of drawing a diamond is:
+
+    number of diamonds / number of cards = 13 / 52 = 0.25 = 25%
+
+// Calculate the probability of multiple events occurring in sequence.
+    The probability of a coin turning up heads three times in a row is:
+
+    (1/2) * (1/2) * (1/2) = 1/8 (or 0.125)
+
+// What is the probability of drawing two aces in a row from a deck of fifty-two cards?
+
+    numberOfCards = 50
+    numberOfAces = 2
+
+    2/50 = 0.04 = 4%
+    0.04 * 0.04 = 0.0016 = 1.6%
+
+
+// 1.2 Choose random numbers from that array and generate events based on those choices.
+
+    int[] stuff = new int[5]
+    //[full] 1 is stored in the array twice, making it more likely to be picked.
+    stuff[0] = 1;
+    stuff[1] = 1;
+    //[end]
+    stuff[2] = 2;
+    stuff[3] = 3;
+    stuff[4] = 3;
+    // Picking a random element from an array
+    int index = int(random(stuff.length));
+
+    // This will produce a 40% chance of printing the value 1, a 20% chance of printing 2, and a 40% chance of printing 3.
